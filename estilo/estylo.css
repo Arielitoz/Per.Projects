@@ -1,4 +1,5 @@
 body{
     background-image: url(../imagens/grungepapier.png);
-    /*background-repeat: no-repeat;*/
+    background-repeat: no-repeat;
+    background-size: cover;
 }
