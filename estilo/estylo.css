@@ -3,3 +3,23 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@font-face{
+    font-family: dungeon;
+    src: url(./DUNGRG__.TTF);
+}
+@font-face{
+    font-family: celtic;
+    src: url(./fontes/celtic_gaelige.ttf);
+}
+.Title{
+  font-family: celtic;
+  font-size: 60px;
+  padding: 20px;
+}
+
+.dice:hover{
+    background-color:  blueviolet;
+    transition: all .5s linear;
+    
+}
