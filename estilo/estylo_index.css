@@ -1,0 +1,76 @@
+body{
+    background-image: url(../imagens/grungepapier.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Criação de Fontes */
+@font-face{
+    font-family: dungeon;
+    src: url(./fontes/DUNGRG__.TTF);
+}
+@font-face{
+    font-family: celtic;
+    src: url(./fontes/celtic_gaelige.ttf);
+}
+
+@font-face{
+    font-family: elfic;
+    src: url(./fontes/QUENYA.TTF);
+}
+
+.dragonius{
+    width: 140px;
+    height: 160px;
+    float: right;
+}
+
+.drog{
+    float: left;
+    width: 110px;
+    height: 110px;
+}
+.Title{
+    font-family: dungeon;
+    font-size: 80px;
+    margin-top: 35px;
+    text-align: center;
+  }
+  
+  .dice:hover{
+      /* Substituição de Imagem */
+      background-image: url(../imagens/dice_2.png); 
+      /* transform: scale(1.1); */
+  }
+
+  /*.Text{
+    /* Texto e diagramação - Index 
+    font-family: elfic;
+    text-align: center;
+    margin-left: 15px;
+    margin-top: 3px;
+    font-size: 30px;
+   line-height: 50px;
+}*/
+
+.Text{
+    /* transition: 12s; */
+    font-family: dungeon;
+    text-align: center;
+    margin-left: 15px;
+    margin-top: 3px;
+    font-size: 75px;
+   line-height: 85px;
+}
+
+.Dice_link{
+
+    margin-top: 1vh;
+    margin-left: 45vw;
+    position: relative;
+    
+}
+
+span:hover{
+    color: orangered;
+}
