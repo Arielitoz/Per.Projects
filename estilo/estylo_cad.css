@@ -89,11 +89,12 @@ input[type=text], input[type=password]{
     animation-name: Gnomiu;
     animation-duration: 10s;
     animation-direction: normal;
+    animation-iteration-count: infinite;
 }
 
 @keyframes Gnomiu{
     0% {margin-left: -150px};
     25%{margin-left: 20px};
     50%{margin-left: 40px;}
-    100% {margin-left: 900px};
+    100% {margin-left: 400px};
 }
