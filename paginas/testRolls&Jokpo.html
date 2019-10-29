@@ -44,8 +44,8 @@
             Jogador:
             <select id="jopo">
                     <option value="0">Pedra</option>
-                    <option value="2">Papel</option>
-                    <option value="3">Tesoura</option>
+                    <option value="1">Papel</option>
+                    <option value="2">Tesoura</option>
             </select> <br>
             Computador:
              <div style="display: none;"><select id="pc">
@@ -70,7 +70,8 @@
         var status = document.getElementById("status");
         var d1 = Math.floor(Math.random()* 6) + 1;
         var d2 = Math.floor(Math.random() *6) + 1;
-        var d3 = Math.floor(Math.random() * 20) + 1;
+        //var d3 = Math.floor(Math.random() * 20) + 1;
+        var d3 = Math.floor(Math.random() * 6) + 1;
         var diceTotal = d1 + d2;
 
         die1.innerHTML= d1;
@@ -79,8 +80,8 @@
         //status.innerHTML = "Você rolou"+diceTotal+".";
         status.innerHTML =`Você rolou ${diceTotal}.`;
 
-            if(d1 == d2){
-                status.innerHTML +=`Você rolou Pares!Parabéns!`
+            if(d1 == d2  && d2 == d3){
+                status.innerHTML +=`Cassino, uau`
             }
             if(d3 == 20){
                 status.innerHTML += `<br>Uau, Acerto Critico!`
@@ -92,7 +93,7 @@
 
     }
 
-    function Jok(){
+  /*  function Jok(){
         var jog = Number(alo1.value);
         var pc = Number(alo2.value);
 
@@ -121,32 +122,32 @@
         
 
     }
-
+*/
     function Joka(){
         var pcChoose = Math.floor(Math.random() * 3);
 
         var jog = Number(jopo.value);
        
         if (jog == pcChoose ){
-            ab.innerHTML = `empate `;
+            ab.innerHTML += `<br>empate `;
         }
         if(jog == 0 && pcChoose == 1){
-            ab.innerHTML = `Computador Ganhou- Paper Wins Rock`
+            ab.innerHTML += `<br>Computador Ganhou- Paper Wins Rock`
         }
         if(jog == 1 && pcChoose == 0){
-            a.innerHTML = `Voce ganhou - Paper Wins Rock`
+            a.innerHTML += `<br>Voce ganhou - Paper Wins Rock`
         }
         if(jog == 0 && pcChoose == 2){
-            ab.innerHTML = `Voce ganhou- Rock Wins Scissor`;
+            ab.innerHTML += `<br>Voce ganhou- Rock Wins Scissor`;
         }
         if(jog == 2 && pcChoose == 0){
-            ab.innerHTML = `Computador Ganhou- Rock wins Scissor`
+            ab.innerHTML += `<br>Computador Ganhou- Rock wins Scissor`
         }
         if(jog == 1 && pcChoose == 2){
-            ab.innerHTML = `Computador ganhou- Scissor wins Paper`
+            ab.innerHTML += `<br>Computador ganhou- Scissor wins Paper`
         }
         if(jog == 2 && pcChoose == 1){
-            ab.innerHTML = `Voce ganhou - Scissor Wins Paper`
+            ab.innerHTML += `<br>Voce ganhou - Scissor Wins Paper`
         }
         
         
