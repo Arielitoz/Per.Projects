@@ -9,6 +9,7 @@
     font-family: dungeon;
     src: url(./fontes/DUNGRG__.TTF);
 }
+
 @font-face{
     font-family: celtic;
     src: url(./fontes/celtic_gaelige.ttf);
@@ -96,5 +97,26 @@ input[type=text], input[type=password]{
     0% {margin-left: -150px};
     25%{margin-left: 20px};
     50%{margin-left: 40px;}
-    100% {margin-left: 1200px};
+    100% {margin-left: 300px};
 }
+
+.validgame{
+
+    font-size: 19px;
+    position: center;
+}
+
+.opt{
+
+    color: black;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.jok{
+    background-color: blanchedalmond;
+    color: black;
+    border-radius: 2px;
+    border-style: solid;
+}
+
