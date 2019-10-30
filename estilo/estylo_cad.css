@@ -88,9 +88,10 @@ input[type=text], input[type=password]{
 
 .gnomiu{
     animation-name: Gnomiu;
-    animation-duration: 8s;
+    animation-duration: 7s;
     animation-direction: normal;
-    animation-iteration-count: infinite;
+    animation-iteration-count: initial;
+    margin-left: 300px;
 }
 
 @keyframes Gnomiu{

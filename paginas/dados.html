@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" type="image/x-icon" href="../imagens/favicon3.ico">
+        <link rel="stylesheet" type="text/css" href="../estilo/dados.css" />
+        <link rel="stylesheet" type="text/css" href="../estilo/resetCSS.css" />
+        <link rel="stylesheet" type="text/css" href="../estilo/normalize.css " />
+        <title>Taverna: Coruja Caolha</title>
+</head>
+<body>
+        <div class="global">
+                <div class="navtop">
+                    <ul>  			
+                        <li><a href="./sistemas.html" class="a1">Sistemas</a></li>  			
+                        <li><a href="#" class="a2">Mesas</a></li>  			
+                        <li><a href="./dados.html" class="a3">Dados</a></li>  			
+                        <li><a href="#" class="a4">Campanhas</a></li>  
+                        <li><a href="#" class="a4">Regras</a></li>		
+                    </ul> 
+        
+                </div>
+                <div class="dados">
+                    <button onclick="d4()"><img src="../imagens/dado.gif" alt="" class="ab"></button> 
+                    <div id="d4"></div>
+                    <button onclick="d6()"><img src="../imagens/d6.png" alt="" class="ab"></button> 
+                    <div id="d6"></div>
+                    <button onclick="d8()"><img src="../imagens/d8.png" alt="" class="ab"></button> 
+                    <div id="d8"></div>
+                    <img src="../imagens/d10.png" alt="" class="ab">
+                    <div id="d10"></div>
+                    <img src="../imagens/d12.jpg" alt="" class="ab">
+                    <div id="d12"></div>
+                    <img src="../imagens/d20.png" alt="" class="ab"> 
+                    <div id="d20"></div>
+
+                </div>
+        
+            </div>
+    
+</body>
+</html>
+<script>
+    function d4(){
+        var d4t = document.getElementById("d4");
+        var d4 = Math.floor(Math.random()* 4) + 1;
+        
+
+        d4t.innerHTML= d4;
+        
+
+    }
+    function d6(){
+        var d6t = document.getElementById("d6");
+        var d6 = Math.floor(Math.random()* 6) + 1;
+        
+
+        d6t.innerHTML= d6;
+    }
+    function d8(){
+        var d8t = document.getElementById("d8");
+        var d8 = Math.floor(Math.random()* 8) + 1;
+        
+
+        d8t.innerHTML= d8; 
+    }
+</script>

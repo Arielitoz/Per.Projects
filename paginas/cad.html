@@ -14,13 +14,13 @@
     <div id="principal" class="principal">
         <div class="forms">
             <label for="nomeJ" class="lbl">Nome Jogador </label>
-            <input type="text" id="nomeJ" class="nomeJ" placeholder="Seu Nome..."><br><br>
+            <input onkeyup="teste()" type="text" id="nomeJ" class="nomeJ" placeholder="Seu Nome..."><br><br>
             <label for="nomeJ" class="lbl">Nome do Personagem </label>
-            <input type="text" id="nomeP" class="nomeJ" placeholder="Nome do Personagem..."><br><br>
+            <input onkeyup="teste()" type="text" id="nomeP" class="nomeJ" placeholder="Nome do Personagem..."><br><br>
             <label for="nomeJ" class="lbl">Senha de Acesso</label>
-            <input type="password" id="senha" class="nomeJ" placeholder="Senha dada pelo Mestre..."><br><br>
+            <input onkeyup="teste()" type="password" id="senha" class="nomeJ" placeholder="Senha dada pelo Mestre..."><br><br>
             <br>
-                <div class="validgame">
+                <div class="validgame"style="display:none" id="validgame"> 
                     Para validarmos se você é realmente um Jogador, temos um Pequeno Jogo(Jo-Ken-Po)<br>
                     Escolha uma opção:
                     <select id="jopo" class="opt">
@@ -38,11 +38,12 @@
                         <button onclick="Joka()" class="jok">Jogar</button>
                          <div id="ab"></div>
                 </div>
-            <a style="text-decoration: none" href="../paginas/testRolls&Jokpo.html"><button onclick="" class="entrar" id="entrar" style="display: none;">Entrar</button></a>
+            <a style="text-decoration: none" href="../paginas/home.html"><button onclick="" class="entrar" id="entrar" style="display: none;">Entrar</button></a>
         </div>
     </div>
         <div class="imageCad">
-            <img src="../imagens/gnome1.png" alt="" class="gnomiu" style="width: 200px; height: 200px">
+            <img src="../imagens/gnome1.png" alt="" class="gnomiu" style="width: 150px; height: 150px">
+            <img src="../imagens/gnome2.png" alt="" class="gnomiu" style="width: 100px; height: 110px; margin-bottom: 15px">
         </div>
         <!-- <a href="../Livros e outros/D&D 5E - Homebrew - Círculo da Aranha.pdf" target="blank">aaa</a> ---- Target Blank abre em outra aba, href funciona com pdf, mas tem de estar em conjunto com o diretorio.
         <a href="../imagens/Gisela.jpg" target="blank">bbbbb</a> Href target blank funciona com imagem também
@@ -58,6 +59,15 @@
 </body>
 </html>
 <script>
+
+    function teste(){
+    if(nomeJ.value == "Ariel" && nomeP.value == "Balin" && senha.value =="d20"){
+        validgame.style.display = `block`;
+    }else{
+        validgame.style.display= `none`;
+    }
+    
+    }
     function Joka(){
         var pcChoose = Math.floor(Math.random() * 3);
         ab.innerHTML = ``;
