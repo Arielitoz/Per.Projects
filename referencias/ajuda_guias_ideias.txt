@@ -30,3 +30,11 @@ https://www.youtube.com/watch?v=bf5c2PA_Fso
 
 
 Conteudo de CSS : https://www.maujor.com/tutorial/layout-css-passo-a-passo.php
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Declara%C3%A7%C3%B5es
+http://gabrielprates.com/2017/06/02/excecoes-e-erros-em-js.html
+http://programadorobjetivo.co/boas-praticas-javascript-crie-suas-proprias-excecoes/
+https://social.technet.microsoft.com/wiki/pt-br/contents/articles/32455.javascript-tratamento-de-erros.aspx
+https://www.netbsd.org/
+https://www.infonova.com.br/artigo/ferramentas-para-abertura-de-chamado-gratis/
+
+14:49 01/11/2019
