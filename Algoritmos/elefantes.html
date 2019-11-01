@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    Quantos elefantes? <input type="text" id="elefantes">
+    <br>
+    <button onclick="cantar()">Atazanar</button>
+    <br>
+    <div id="div_elefantes"></div>
+    
+</body>
+</html>
+<script>
+    function cantar(){
+        div_elefantes.innerHTML = ``;
+
+        var valor_elefantes = Number(elefantes.value);
+        var frase_1 = `1 elefante incomoda muita gente!<br>`;
+
+            if(valor_elefantes == 1){
+                div_elefantes.innerHTML = frase_1;
+            }
+
+        for(var contador = 2; contador <= valor_elefantes; contador++){
+                var frase_incomodam = ``;
+                for(var incomodam = 0; incomodam < contador; incomodam++){
+                    frase_incomodam += 'incomodam , ';
+                }
+
+
+            div_elefantes.innerHTML += `${frase_1} ${contador} elefantes ${frase_incomodam} muito mais!<br><br>`;
+        }
+    }
+
+
+</script>

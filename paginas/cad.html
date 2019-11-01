@@ -30,6 +30,7 @@
                      </select>
                      
                         <button onclick="Joka()" class="jok">Jogar</button>
+                        <div id="pc_resp"></div>
                          <div id="ab"></div>
                 </div>
             <a style="text-decoration: none" href="../paginas/home.html"><button onclick="" class="entrar" id="entrar" style="display: none;">Entrar</button></a>
@@ -66,6 +67,17 @@
         var pcChoose = Math.floor(Math.random() * 3);
         ab.innerHTML = ``;
         var jog = Number(jopo.value);
+       /* pc_resp.innerHTML = ``;
+
+        if(pcChoose == 0){
+            pc_resp.innerHTML = `O computador escolheu Pedra`;
+        }
+        if(pcChoose == 1){
+            pc_resp.innerHTML = `O Computador escolheu Papel`;
+        }
+        if(pcChoose == 2){
+            pc_resp.innerHTML  =`O computador escolheu Tesoura`;
+        }*/
        
         if (jog == pcChoose ){
             ab.innerHTML = `<br>Empate! `;

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    Insira sua idade <input type="text" id="idade">
+    <br>
+    <button onclick="life()">Ver a vida</button><br>
+    <div id="make"></div>
+    
+</body>
+</html>
+<script>
+    function life(){
+
+        make.innerHTML = ``;
+        var idade1 = Number(idade.value);
+        
+
+        for(var contador=0; contador <= idade1 ; contador++){
+
+            if(contador >= 0 && contador <= 4){
+                make.innerHTML += `${contador} anos (Primeira Infancia)<br>`;
+            }else if(contador > 4 && contador <= 6){
+                make.innerHTML += `${contador} anos (Pré-escolar)<br>`;
+            }else if(contador > 6 && contador <= 10){
+                make.innerHTML += `${contador} anos(Segunda Infancia)<br>`;
+            }else if(contador >10 && contador <= 18){
+                make.innerHTML += `${contador} anos (Adolescencia)<br>`;
+            }else if(contador >18 && contador <=50){
+                make.innerHTML += `${contador} anos(Adulto)<br>`;
+            }else if(contador > 50 && contador <= 100){
+                make.innerHTML += `${contador} anos(Melhor idade)<br>`;
+            }else{
+                make.innerHTML += `${contador} Matusalem<br>`;
+            }
+
+        }
+        
+
+    }
+
+</script>

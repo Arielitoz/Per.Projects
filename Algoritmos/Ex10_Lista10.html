@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <h4>Numeradores</h4>
+        <br>
+        <button onclick="contador()">Curto 3 e 5</button><br>
+        <div id="fifa"></div>
+    
+</body>
+</html>
+<script>
+
+function contador(){
+        
+        
+        fifa.innerHTML =``;
+
+        for(var cont = 1 ; cont<=100; cont++){
+            
+            if(cont % 3 != 0 && cont % 5 != 0){
+               fifa.innerHTML += `<br>${cont}`;
+            }else if(cont % 3 == 0 && cont % 5 == 0){
+                    fifa.innerHTML += `<br>É tri, é penta`;
+                }else if(cont % 5 == 0){
+                        fifa.innerHTML += `<br>É penta`;
+                    }else if(cont % 3 == 0){
+                            fifa.innerHTML += `<br>É tri`;
+                }
+
+            }
+    }
+
+
+</script>

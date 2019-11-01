@@ -1,0 +1,48 @@
+body{
+    background-color: #0d1126;
+}
+.navtop{
+    
+    font-family: dungeon;
+    font-size: 35px;
+    background-color: black;
+    text-decoration-color: white;
+    height: 40px;
+    text-align: center;
+    padding-top:3vh;
+    padding-bottom: 1vh;
+    position: fixed;
+    width: 100%;
+    
+    
+}
+
+@font-face{
+    font-family: dungeon;
+    src: url(./fontes/DUNGRG__.TTF);
+}
+
+@font-face{
+    font-family: celtic;
+    src: url(./fontes/celtic_gaelige.ttf);
+}
+
+@font-face{
+    font-family: elfic;
+    src: url(./fontes/QUENYA.TTF);
+}
+
+.navtop li{
+    
+    margin-top: 20px;
+    padding: 60px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    display: inline;
+}
