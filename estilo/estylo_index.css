@@ -72,5 +72,9 @@ body{
 }
 
 span:hover{
-    color: orangered;
+    color:
+orange !important;
+    
+    text-shadow: 0 0 8px
+    #000000;
 }

@@ -105,6 +105,18 @@ input[type=text], input[type=password]{
 
     font-size: 19px;
     position: center;
+    color:
+    #ff9d1c !important;
+   /* #111733;  #0d1126;     #789922;
+} */
+}
+
+.validgame:hover{
+    color:
+#ff9d1c !important;
+
+text-shadow: 0 0 8px
+#d98518;
 }
 
 .opt{
