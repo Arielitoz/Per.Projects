@@ -46,3 +46,15 @@ a{
 li {
     display: inline;
 }
+
+.teste{
+
+    padding-top: 140px;
+    color: #ff9d1c !important;
+    font-size: 40px;
+}
+
+.teste:hover{
+    text-shadow:  0 0 8px #ff9d1c;
+/*#ff9d1c !important;
+}
