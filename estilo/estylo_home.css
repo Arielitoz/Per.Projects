@@ -2,6 +2,7 @@ body{
     background-image: url(../imagens/grungepapier.png);
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 
 @font-face{
@@ -39,7 +40,7 @@ body{
 .navtop li{
     
     margin-top: 20px;
-    padding: 60px;
+    padding: 40px;
 }
 
 a{
@@ -49,6 +50,28 @@ a{
 
 li {
     display: inline;
+}
+
+.div_partners{
+
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    width: 25vw;
+    height: fit-content;
+    margin-left: 2vw;
+    margin-top: 70px;
+    word-wrap: break-word;
+    float: left;
+    margin-bottom: 2vh;
+
+}
+
+.partners{
+    
+    font-size: 25px;
+    font-family: celtic;
+    text-align: center;
 }
 
 /*.a1:hover{
