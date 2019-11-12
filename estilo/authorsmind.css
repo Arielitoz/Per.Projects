@@ -40,6 +40,30 @@ body{
     src: url(./fontes/Nickainley-Normal.otf);
 }
 @font-face{
+    font-family: stonehenge;
+    src: url(./fontes/stonehen.ttf);
+}
+@font-face{
+    font-family: long_iberica;
+    src: url(./fontes/LongaIberica-DEMO.ttf);
+}
+@font-face{
+    font-family: liv_stone;
+    src: url(./fontes/Livingst.ttf);
+}
+@font-face{
+    font-family: irish_uncial;
+    src: url(./fontes/IrishUncialfabeta-Bold.ttf);
+}
+@font-face{
+    font-family: elementgothic;
+    src: url(./fontes/Elementary_Gothic_Bookhand.ttf);
+}
+@font-face{
+    font-family: carolingia;
+    src: url(./fontes/carolingia.ttf);
+}
+@font-face{
     font-family: old_eng;
     src: url(./fontes/OldeEnglish.ttf);
 }
