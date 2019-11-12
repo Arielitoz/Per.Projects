@@ -2,6 +2,7 @@ body{
     background-image: url(../imagens/grungepapier.png);
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 @font-face{
@@ -51,8 +52,37 @@ li {
 }
 
 .ab{
+
     padding-top: 90px;
     width: 100px;
     height: 100px;
-    background-color:transparent;
+    
+    
+    
 }
+
+.backDice{
+
+    background-color:transparent;
+    border: none;
+    
+}
+
+.dados{
+    width: 100%;
+}
+.space_divs{
+
+    display: flex;
+    margin-top: 120px;
+    font-size: 60px;
+    font-family: dungeon;
+    text-shadow:  0 0 10px #303030;
+}
+.testx{
+    
+    width: 100%;
+    display: flex;
+    
+}
+
