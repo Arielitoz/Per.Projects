@@ -31,11 +31,54 @@ body{
     font-family: elfic;
     src: url(./fontes/QUENYA.TTF);
 }
-
+@font-face{
+    font-family: thundergood;
+    src: url(./fontes/Thundergood.ttf);
+}
+@font-face{
+    font-family: nick;
+    src: url(./fontes/Nickainley-Normal.otf);
+}
+@font-face{
+    font-family: old_eng;
+    src: url(./fontes/OldeEnglish.ttf);
+}
+@font-face{
+    font-family: cardinal;
+    src: url(./fontes/Cardinal.ttf);
+}
+@font-face{
+    font-family: halfbred;
+    src: url(./fontes/HalfbreD.ttf);
+}
+@font-face{
+    font-family: Khalisa;
+    src: url(./fontes/Khalisa_DEMO.ttf);
+}
+@font-face{
+    font-family: lux;
+    src: url(./fontes/Lux-Montag.ttf);
+}
+@font-face{
+    font-family: allorta;
+    src: url(./fontes/AllortaRegular.ttf);
+}
+@font-face{
+    font-family: big_brando;
+    src: url(./fontes/Branday.ttf);
+}
+@font-face{
+    font-family: panerah;
+    src: url(./fontes/Panerah\ Demo.otf);
+}
+@font-face{
+    font-family: roth;
+    src: url(./fontes/Rothenberg\ Bold.ttf);
+}
 .navtop li{
     
     margin-top: 20px;
-    padding: 40px;
+    padding: 20px;
 }
 
 a{
@@ -48,13 +91,32 @@ li {
 }
 
 .teste{
-
-    padding-top: 140px;
+    font-family: allorta;
+    padding-top: 1px;
+    margin-left: 2vw;
     color: #ff9d1c !important;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .teste:hover{
     text-shadow:  0 0 8px #ff9d1c;
-/*#ff9d1c !important;
+/*#ff9d1c !important;*/
+}
+
+.photo{
+
+    margin-top: 100px;
+    margin-left: 3vw;
+    width: 120px;
+    height: 120px;;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 50%;
+}
+
+img{
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
 }

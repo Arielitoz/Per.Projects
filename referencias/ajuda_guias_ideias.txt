@@ -38,5 +38,7 @@ http://programadorobjetivo.co/boas-praticas-javascript-crie-suas-proprias-exceco
 https://social.technet.microsoft.com/wiki/pt-br/contents/articles/32455.javascript-tratamento-de-erros.aspx
 https://www.netbsd.org/
 https://www.infonova.com.br/artigo/ferramentas-para-abertura-de-chamado-gratis/
+https://www.webfx.com/blog/web-design/circular-images-css/
+https://www.hostinger.com.br/tutoriais/criar-site-responsivo-css
 
 14:49 01/11/2019
