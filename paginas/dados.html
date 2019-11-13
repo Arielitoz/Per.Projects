@@ -25,18 +25,20 @@
         
                 </div>
                 <div class="dados">
-                    <button onclick="d4()"><img src="../imagens/dado.gif" alt="" class="ab"></button> 
+                    <button onclick="d4()"><img src="../imagens/d4.png" alt="" class="ab"></button> 
                     <div id="d4"></div>
                     <button onclick="d6()"><img src="../imagens/d6.png" alt="" class="ab"></button> 
                     <div id="d6"></div>
                     <button onclick="d8()"><img src="../imagens/d8.png" alt="" class="ab"></button> 
                     <div id="d8"></div>
-                    <img src="../imagens/d10.png" alt="" class="ab">
+                    <button onclick="d10()"><img src="../imagens/d10.png" alt="" class="ab"></button>
                     <div id="d10"></div>
-                    <img src="../imagens/d12.jpg" alt="" class="ab">
+                    <button onclick="d12()"><img src="../imagens/d12.png" alt="" class="ab"></button>
                     <div id="d12"></div>
-                    <img src="../imagens/d20.png" alt="" class="ab"> 
+                    <button onclick="d20()"><img src="../imagens/d20.png" alt="" class="ab"></button> 
                     <div id="d20"></div>
+                    <button onclick="d100()"><img src="../imagens/d100.png" alt="" class="ab"></button>
+                    <div id="d100"></div>
 
                 </div>
         
@@ -72,5 +74,35 @@
         
 
         d8t.innerHTML= d8; 
+    }
+    function d10(){
+        var d10t = document.getElementById("d10");
+        var d10 = Math.floor(Math.random()* 10) + 1;
+        
+
+        d10t.innerHTML= d10;
+    }
+    function d12(){
+        var d12t = document.getElementById("d12");
+        var d12 = Math.floor(Math.random()* 12) + 1;
+        
+
+        d12t.innerHTML= d12;
+        
+
+    }
+    function d20(){
+        var d20t = document.getElementById("d20");
+        var d20 = Math.floor(Math.random()* 20) + 1;
+        
+
+        d20t.innerHTML= d20;
+    }
+    function d100(){
+        var d100t = document.getElementById("d100");
+        var d100 = Math.floor(Math.random()* 100) + 1;
+        
+
+        d100t.innerHTML= d100; 
     }
 </script>

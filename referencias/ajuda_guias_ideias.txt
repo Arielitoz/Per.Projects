@@ -29,7 +29,7 @@ https://naruto.fandom.com/pt-br/wiki/Sennin
 
 
 https://www.youtube.com/watch?v=bf5c2PA_Fso 
-
+https://www.devmedia.com.br/como-criar-um-slider-com-css-e-html/37787
 
 Conteudo de CSS : https://www.maujor.com/tutorial/layout-css-passo-a-passo.php
 https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Declara%C3%A7%C3%B5es
