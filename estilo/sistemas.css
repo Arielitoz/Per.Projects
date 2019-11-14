@@ -18,6 +18,22 @@ body{
     font-family: elfic;
     src: url(./fontes/QUENYA.TTF);
 }
+@font-face{
+    font-family: carolingia;
+    src: url(./fontes/carolingia.ttf);
+}
+@font-face{
+    font-family: stonehenge;
+    src: url(./fontes/stonehen.ttf);
+}
+@font-face{
+    font-family: old_eng;
+    src: url(./fontes/OldeEnglish.ttf);
+}
+@font-face{
+    font-family: cardinal;
+    src: url(./fontes/Cardinal.ttf);
+}
 /* ----------------------------------------------------------------------------------------------------------------------- */ 
 
 .navtop{
@@ -54,20 +70,27 @@ li {
 .ab{
     color: black;
     font-family: dungeon; 
-    font-size: 50px;
+    font-size: 40px;
 }
 
+.ab:hover{
+    text-shadow:  0 0 6px #ffffff;
+}
 .sistems{
-    margin-top: 100px;
+    margin-top: 80px;
     border-style: solid;
     border-width: thin;
+    border-radius: 5px;
     border-color: black;
-    width: 40vw;
+    width: 70vw;
     height: fit-content;
     margin-left: 1vw;
     word-wrap: break-word;
     float: left;
     margin-bottom: 1vh;
     font-size: 40px;
+    font-family: stonehenge;
+    padding-left: 2vw;
+    padding-top: 1vh;
 
 }

@@ -57,6 +57,7 @@ li {
     border-style: solid;
     border-width: thin;
     border-color: black;
+    border-radius: 5px;
     width: 25vw;
     height: fit-content;
     margin-left: 2vw;

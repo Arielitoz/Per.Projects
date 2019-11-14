@@ -114,12 +114,18 @@ li {
     display: inline;
 }
 
+.global{
+    width: 100%;
+}
 .teste{
+
+    border: solid;
+    border-color: whitesmoke;
     font-family: allorta;
-    padding-top: 1px;
     margin-left: 2vw;
     color: #ff9d1c !important;
     font-size: 30px;
+
 }
 
 .teste:hover{
@@ -137,6 +143,8 @@ li {
     border-style: solid;
     border-width: thin;
     border-radius: 50%;
+    height: 120px;
+    width: 120px;
 }
 
 img{
@@ -144,3 +152,21 @@ img{
     height: 120px;
     width: 120px;
 }
+
+.space_1{
+    width: 33%;
+    display: inline-block;
+}
+
+.space_2{
+    width: 66%;
+    display: inline-block;
+    border: solid;
+    border-color: whitesmoke;
+    font-family: allorta;
+    margin-left: 1px;
+    color: #ff9d1c !important;
+    font-size: 30px;
+ 
+}
+
