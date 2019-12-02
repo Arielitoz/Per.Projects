@@ -12,13 +12,14 @@
 </head>
 <body class="body">
     <div id="principal" class="principal">
+        <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
         <div class="forms">
             <label for="nomeJ" class="lbl">Nome Jogador </label>
-            <input onkeyup="teste()" type="text" id="nomeJ" class="nomeJ" placeholder="Seu Nome..."><br><br>
+            <input name="nome"  type="text" id="nomeJ" class="nomeJ" placeholder="Seu Nome..."><br><br>
             <label for="nomeJ" class="lbl">Nome do Personagem </label>
-            <input onkeyup="teste()" type="text" id="nomeP" class="nomeJ" placeholder="Nome do Personagem..."><br><br>
+            <input name="nomep"  type="text" id="nomeP" class="nomeJ" placeholder="Nome do Personagem..."><br><br>
             <label for="nomeJ" class="lbl">Senha de Acesso</label>
-            <input onkeyup="teste()" type="password" id="senha" class="nomeJ" placeholder="Senha dada pelo Mestre..."><br><br>
+            <input name="senha" type="password" id="senha" class="nomeJ" placeholder="Senha dada pelo Mestre..."><br><br>
             <span class="abcde">Se não possui uma conta, <a href="../paginas/cadastres.html">Cadastre-se aqui!</a></span>
             
                 <div class="validgame"style="display:none" id="validgame"> 
@@ -34,8 +35,9 @@
                         <div id="pc_resp"></div>
                          <div id="ab"></div>
                 </div>
-            <a style="text-decoration: none" href="../paginas/home.html"><button onclick="" class="entrar" id="entrar" style="display: none;">Entrar</button></a>
+            <a style="text-decoration: none" href="../paginas/home.html"><button class="entrar" id="btn_entrar">Entrar</button></a>
         </div>
+        </form>
     </div>
         <div class="imageCad">
             <img src="../imagens/gnome1.png" alt="" class="gnomiu" style="width: 150px; height: 150px">
@@ -56,7 +58,8 @@
 </html>
 <script>
 
-    function teste(){
+    /*function teste(){
+        
     if(nomeJ.value == "Ariel" && nomeP.value == "Balin" && senha.value =="d20"){
         validgame.style.display = `block`;
     }else{
@@ -78,7 +81,7 @@
         }
         if(pcChoose == 2){
             pc_resp.innerHTML  =`O computador escolheu Tesoura`;
-        }*/
+        }
        
         if (jog == pcChoose ){
             ab.innerHTML = `<br>Empate! `;
@@ -107,7 +110,26 @@
         if(jog == 2 && pcChoose == 1){
             ab.innerHTML = `<br>Tesoura Corta Papel, Você ganhou!`
             entrar.style.display = `block`;
-        }
-        
+        }*/
+        function cadastrar() {
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+            
+            if (response.ok) {
+
+                window.location.href='./index.html';
+
+            } else {
+
+                console.log('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                });
+            }
+        });
+
+        return false;
     }
 </script>
