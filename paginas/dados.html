@@ -15,6 +15,13 @@
                 <div class="navtop">
                     <ul>  			
                         <li><a href="./home.html">Inicio</a></li>	
+                        <li><a href="./sistemas.html" class="a1">Sistemas</a></li>  			 			
+                        <li><a href="./dados.html" class="a3">Dados</a></li>  			
+                        <li><a href="./authorsmind.html" class="a6">Mente do Autor</a></li>		
+                    </ul> 
+                    <!--
+                        <ul>  			
+                        <li><a href="./home.html">Inicio</a></li>	
                         <li><a href="./sistemas.html" class="a1">Sistemas</a></li>  			
                         <li><a href="#" class="a2">Mesas</a></li>  			
                         <li><a href="./dados.html" class="a3">Dados</a></li>  			
@@ -22,7 +29,13 @@
                         <li><a href="#" class="a5">Regras</a></li>
                         <li><a href="./authorsmind.html" class="a6">Mente do Autor</a></li>		
                     </ul> 
+                    -->
         
+                </div>
+                <div class="tell">  
+                    Aqui podem utilizar os Dados recomendados para se jogar RPG! Clique sobre para obter um Resultado.
+                    <br>
+                    Boa Sorte e Boas Rolagens!
                 </div>
                 <div class="dados">
                     <div class="testx">
@@ -45,8 +58,8 @@
                         <button onclick="d100()" class="backDice"><img src="../imagens/d100.png" alt="" class="ab"></button>
                         <div id="d100" class="space_divs"></div>
                     </div>
-
                 </div>
+                
         
             </div>
             <div style="display:  none">
@@ -103,6 +116,13 @@
         
 
         d20t.innerHTML= d20;
+
+        if(d20 == 20){
+            d20t.innerHTML= `${d20} - Acerto Crítico!`;
+        }
+        if(d20 == 1){
+            d20t.innerHTML= `${d20} - Falha Crítica! `;
+        }
     }
     function d100(){
         var d100t = document.getElementById("d100");
@@ -110,5 +130,6 @@
         
 
         d100t.innerHTML= d100; 
+        
     }
 </script>

@@ -54,21 +54,63 @@ li {
 
 .div_partners{
 
-    border-style: solid;
-    border-width: thin;
+    border: solid;
     border-color: black;
     border-radius: 5px;
     width: 25vw;
     height: fit-content;
     margin-left: 2vw;
-    margin-top: 70px;
+    margin-top: 9vh;
     word-wrap: break-word;
     float: left;
     margin-bottom: 2vh;
+    display: inline-block;
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 
 }
+@font-face{
+    font-family: yakien;
+    src: url(../estilo/fontes/Yackien.ttf);
+}
+@font-face{
+    font-family: croche;
+    src: url(../estilo/fontes/Crochet.otf);
+}
+@font-face{
+    font-family: stardust;
+    src: url(../estilo/fontes/Stardust.ttf);
+}
+.history{
+    width: 60vw;
+    display: inline-block;
+    border:solid;
+    border-color: black;
+    margin-top: 9vh;
+    margin-left: 4vw;
+    margin-bottom: 1vh;
+    word-wrap: break-word;
+    font-size: 20px;
+    padding: 1vw;
+    font-family: croche;
+    
+}
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color:transparent; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
 
+  }
+  
+  
 .partners{
     
     font-size: 25px;

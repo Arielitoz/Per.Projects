@@ -69,7 +69,8 @@ li {
 }
 
 .dados{
-    width: 100%;
+    margin-left: 37vw;
+    margin-right: 40vw;
 }
 .space_divs{
 
@@ -86,3 +87,11 @@ li {
     
 }
 
+.tell{
+    padding-top: 10vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    text-align: center;
+    font-family: dungeon;
+    font-size: 50px;
+}

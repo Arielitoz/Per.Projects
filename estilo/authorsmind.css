@@ -13,7 +13,10 @@ body{
     padding-bottom: 1vh;
     position: fixed;
     width: 100%;
-    
+
+
+
+
     
 }
 
@@ -133,9 +136,10 @@ li {
 /*#ff9d1c !important;*/
 }
 
+
 .photo{
 
-    margin-top: 100px;
+    margin-top: 85px;
     margin-left: 3vw;
     width: 120px;
     height: 120px;;
@@ -155,18 +159,21 @@ img{
 
 .space_1{
     width: 33%;
-    display: inline-block;
+    display: inline-table;
 }
 
 .space_2{
+
     width: 66%;
-    display: inline-block;
+    display: inline-table;
     border: solid;
     border-color: whitesmoke;
     font-family: allorta;
     margin-left: 1px;
     color: #ff9d1c !important;
     font-size: 30px;
+    word-wrap: break-word ;
+    height: 100%;
  
 }
 
